@@ -1,6 +1,6 @@
-Beginner's Guide to React
-=========================
- My code for Kent C. Dodd's course on Egghead.io
+# Beginner's Guide to React
+
+My code for Kent C. Dodd's course on Egghead.io
 
 ## Prerequisite Article: [All the JavaScript you need to know before starting with React](https://jscomplete.com/learn/javascript-for-react)
 
@@ -24,25 +24,42 @@ Beginner's Guide to React
 
 #### Expressions for React
 
-* An expression in JavaScript is any valid unit of code that resolves to a value. 
-    - Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions
+* An expression in JavaScript is any valid unit of code that resolves to a value.
+  * Source: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions>
 * An expression in JSX is a set of curly braces (around a JavaScript expression) in the context of a React component.
 
 #### Destructuring Arrays and Objects
 
 * When brackets appear on the left side of an assignment or within the parentheses used to defined a function, they are most likely for destructing.
 * Destructuring an array's items extracts the items using their position into local variables in the enclosing scope.
-    * Example: `const [one,, three] = [1, 2, 3]; // three evaluates to 3`
+  * Example:
+  
+    ```JavaScript
+
+    const [one,, three] = [1, 2, 3];
+    // three evaluates to 3`
+
+    ```
+
 * Destructuring an object's properties extracts the properties using their names into local variables in the enclosing scope.
-    * Example: `const { PI } = Math; // PI evaluates to Math.PI`
+  * Example:
+  
+    ```JavaScript
+
+    const { PI } = Math;
+    // PI evaluates to Math.PI`
+
+    ```
+
 * Destructuring is a common way to extract React API objects
-    * Example: 
-      ```
-      const { useState, useEffect } = React;
-      const [state, setState] = useState();
-      useEffect(() => {
-          // functionality
-      })
-      ```
+  * Example:
 
+    ```JavaScript
 
+    const { useState, useEffect } = React;
+    const [state, setState] = useState();
+    useEffect(() => {
+        // functionality
+    })
+
+    ```
